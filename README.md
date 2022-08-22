@@ -29,7 +29,7 @@ apt -y install unzip
 
 ## Set parameters
 
-The 5 of global variables for web scraping and parsing in the `extractor.py`.
+The 5 of global variables for web scraping and parsing in the `curator.py`.
 
 |Variable|Context|
 |:-|:-|
@@ -52,13 +52,13 @@ OUTPUT_LOG_FILENAME = "info.log"
 
 To load web page with dynamic contexts and save as HTML file.
 ```Bash
-python3 extractor.py -m pull
+python3 curator.py -m pull
 ```
 Then `htmls` directory will be made and loaded HTML files ( `COMMON_HTML_FILENAME%d.html` ) are saved into.
 
 To scrape the HTML file and dump scores as a log file.
 ```Bash
-python3 extractor.py -m scrape
+python3 curator.py -m scrape
 ```
 Then the parsed logging file ( `OUTPUT_LOG_FILENAME` ) are saved into the working directory.
 
@@ -77,8 +77,8 @@ If you not use these libraries, some of lines are required to modify.
 
 ## Execution
 
-Set `INPUT_LOG_FILENAME` for read the log file in the `analyze.py`, and execute.
+Set `INPUT_LOG_FILENAME` for read the log file in the `analyzer.py`, and execute.
 ```Bash
-python3 analyze.py
+python3 analyzer.py
 ```
 Some adjustment of graph styles and ranges may be needed.
