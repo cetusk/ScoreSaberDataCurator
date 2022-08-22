@@ -1,3 +1,5 @@
+# ScoreSaberDataCurator
+This script `curator.py` fetches an user score data published in the [ScoreSaber](https://scoresaber.com/).
 
 # Preparations
 
@@ -63,7 +65,7 @@ Then the parsed logging file ( `OUTPUT_LOG_FILENAME` ) are saved into the workin
 
 # Analyze example
 
-There is an example for analyzing the log file.
+There is a simple example script for analyzing the log file. This script calculates a raw performance point ( PP ) and visualizes; supporting [the latest PP curve](https://www.patreon.com/posts/performance-34496939).
 
 ## ( Optional ) LaTeX
 
