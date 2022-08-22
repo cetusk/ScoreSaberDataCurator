@@ -1,0 +1,5 @@
+Numpy
+matplotlib
+selenium
+beautifulsoup4
+html5lib
